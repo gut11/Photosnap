@@ -1,0 +1,64 @@
+.text-img{
+    display: flex;
+    height: 35em;
+}
+
+#img{
+    background-image: url("../assets/features/desktop/hero.jpg");
+}
+
+/*---- FEATURES ----*/
+
+#features-section{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5em 2em;
+    padding: 5% 12.5%;
+    padding-bottom: 5.5%;
+    box-sizing: border-box;
+}
+
+#features-img-4{
+    background-image: url("../assets/features/desktop/custom-domain.svg");
+}
+
+#features-img-5{
+    background-image: url("../assets/features/desktop/boost-exposure.svg");
+}
+
+#features-img-6{
+    background-image: url("../assets/features/desktop/drag-drop.svg");
+}
+
+/*---- END FEATURES ----*/
+
+
+@media(max-width: 1150px){
+    #features-section{
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+        padding: 10% 4%;
+        padding-bottom: 11.5%;
+        gap: 1em;
+    }
+}
+
+@media(max-width: 730px){
+    #features-section{
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr;
+        gap: 2.5em;
+    }
+    .features-container{
+        max-width: 20em;
+    }
+}
+
+
+@media(max-width: 570px){
+    .text-img{
+        height: 42.5em;
+    }
+}
+

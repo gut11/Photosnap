@@ -1,0 +1,199 @@
+a,*{
+    color: white;
+    box-sizing: border-box;
+}
+
+/* BIG STORIE*/
+
+#big-storie{
+    background-image: url("../assets/stories/desktop/moon-of-appalacia.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: max(6.5%,6.5em) 6%;
+}
+
+#text-container{
+    width: 26em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.75em;
+}
+
+#text-container > p:first-of-type{
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+#text-container h1{
+    font-size: 2.75em;
+    letter-spacing: 0.15em;
+}
+
+#text-container p > a{
+    margin-left: 0.75em;
+    font-weight: 100;
+}
+
+#text-container :nth-child(3){
+    font-size: 0.85em;
+    color: var(--sgray);
+}
+
+#text-container :nth-child(4) {
+    color: var(--sgray);
+    line-height: 1.75em;
+}
+
+#text-container a::after{
+    background-image: url("../assets/shared/desktop/white-arrow.svg");
+}
+
+/* END BIG STORIE*/
+/* STORIES*/
+
+.storie{
+    width: 25%;
+}
+
+#storie-1{
+    background-image: url("../assets/stories/desktop/mountains.jpg");
+}
+
+#storie-2{
+    background-image: url("../assets/stories/desktop/cityscapes.jpg");
+}
+
+#storie-3{
+    background-image: url("../assets/stories/desktop/18-days-voyage.jpg");
+}
+
+#storie-4{
+    background-image: url("../assets/stories/desktop/architecturals.jpg");
+}
+
+#storie-5{
+    background-image: url("../assets/stories/desktop/world-tour.jpg");
+}
+
+#storie-6{
+    background-image: url("../assets/stories/desktop/unforeseen-corners.jpg");
+}
+
+#storie-7{
+    background-image: url("../assets/stories/desktop/king-on-africa.jpg");
+}
+
+#storie-8{
+    background-image: url("../assets/stories/desktop/trip-to-nowhere.jpg");
+}
+
+#storie-9{
+    background-image: url("../assets/stories/desktop/rage-of-the-sea.jpg");
+}
+
+#storie-10{
+    background-image: linear-gradient(var(--sgray), var(--sgray)),url("../assets/stories/desktop/running-free.jpg");
+    background-blend-mode:darken;
+}
+
+#storie-11{
+    background-image: url("../assets/stories/desktop/behind-the-waves.jpg");
+}
+
+#storie-12{
+    background-image: url("../assets/stories/desktop/calm-waters.jpg");
+}
+
+#storie-13{
+    background-image: url("../assets/stories/desktop/milky-way.jpg");
+}
+
+#storie-14{
+    background-image: url("../assets/stories/desktop/dark-forest.jpg");
+}
+
+#storie-15{
+    background-image: url("../assets/stories/desktop/somwarpet.jpg");
+}
+
+#storie-16{
+    background-image: url("../assets/stories/desktop/land-of-dreams.jpg");
+}
+
+/* END STORIES*/
+/* MEDIA*/
+
+@media(max-width: 1130px){
+    #stories-section{
+        height: 288em;
+        flex-wrap: wrap;
+    }
+    .storie{
+        box-sizing: border-box;
+        width: 50%;
+        height: 12.5%;
+      }
+}
+
+@media(max-width: 725px){
+    #big-storie{
+        background-position: center;
+    }
+}
+
+@media(max-width: 530px){
+    #big-storie{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    #big-storie::before{
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 25em;
+        background-image: url("../assets/stories/desktop/moon-of-appalacia.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    #text-container p{
+        font-size: 0.9em;
+    }
+    #text-container h1{
+        font-size: 2.35em;
+        max-width: 340px;
+    }
+    #text-container{
+        width: 100%;
+        background-color: black;
+        padding: 4em 2em;
+        padding-right: 1em;
+        gap: 1.5em;
+    }
+    #text-container p:nth-child(3){
+        font-size: 0.9em;
+    }
+    #text-container p:last-of-type{
+        font-size: 1.05em;
+        max-width: 380px;
+    }
+    #stories-section{
+        height: 576em;
+    }
+    .storie{
+        width: 100%;
+        height: 6.25%;
+    }
+}
+
+@media(max-width: 352px){
+    #text-container{
+        padding: 3.5em 1.25em;
+        font-size: 0.8em;
+    }
+}
+
+/* END MEDIA*/
+

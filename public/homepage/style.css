@@ -1,0 +1,129 @@
+/*---- HOMEPAGE STYLES ----*/
+/*---- TEXT-IMG ----*/
+
+#text-half-1 div a::after{
+    background-image: url("../assets/shared/desktop/white-arrow.svg");
+}
+
+.text-half-white{
+    background-color: white;
+    color: black;
+}
+
+#text-half-1::before{
+    width: 0.75%;
+    height: 55%;
+}
+
+.text-half a{
+    margin-top: 2em;
+}
+
+.text-half-white div a{
+    color: black;
+}
+
+#img-1{
+    background-image: url("../assets/home/desktop/create-and-share.jpg");
+}
+
+#img-2{
+    background-image: url("../assets/home/desktop/beautiful-stories.jpg");
+}
+
+#img-3{
+    background-image: url("../assets/home/desktop/designed-for-everyone.jpg");
+}
+
+/*---- END TEXT-IMG ----*/
+/*---- STORIES ----*/
+
+#storie-1{
+    background-image: url("../assets/stories/desktop/mountains.jpg");
+}
+
+#storie-2{
+    background-image: url("../assets/stories/desktop/cityscapes.jpg");
+}
+
+#storie-3{
+    background-image: url("../assets/stories/desktop/18-days-voyage.jpg");
+}
+
+#storie-4{
+    background-image: url("../assets/stories/desktop/architecturals.jpg");
+}
+
+/*---- END STORIES ----*/
+/*---- FEATURES ----*/
+
+#features-section{
+    display: flex;
+    justify-content: center;
+    padding: 5em 0;
+    gap: 2.5em;
+}
+
+/*---- END FEATURES ----*/
+/*---- MEDIA ----*/
+
+@media(max-width: 1150px){
+    #features-section{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 570px){
+    .text-img{
+        height: 52.5em;
+        width: 100%;
+    }
+    .text-half{
+        height: 59.5%;
+    }
+    #text-half-1::before{
+        width: 33%;
+        height: 0.5em;
+    }
+    .img-half{
+        width: 100%;
+        height: 40.5%;
+    }
+    footer{
+        font-size: 1.05rem;
+    }
+}
+
+@media(max-width: 350px){
+    .text-img{
+        height: 55.5em;
+    }
+}
+
+@media(max-width: 250px){
+    .text-img{
+        font-size: 0.85rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
